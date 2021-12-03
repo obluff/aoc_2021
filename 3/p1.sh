@@ -1,0 +1,1 @@
+echo $(seq $(head -n 1 input.txt | wc -c) | xargs -I{} sh -c 'cut -c {} input.txt | sort | uniq -c | sort | rev | head -n 1 | cut -c -1')  | sed s/[\n\ ]//g | xargs -I_ sh -c ' echo $(bc <<< "obase=10;ibase=2;$(echo _ | tr 01 10)") "*" $(bc <<< "obase=10;ibase=2;_")' | bc
