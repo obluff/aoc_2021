@@ -1,4 +1,4 @@
-"""got my answers in a notebook so this may or may not run.. its the weekend baby!"""
+"""got my answers in a notebook so this may or may not run.. it's the weekend baby!"""
 
 import numpy as np
 from collections import Counter, deque
